@@ -1,0 +1,33 @@
+﻿<Window x:Class="martinezA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:martinezA"
+        mc:Ignorable="d"
+        Title="martinezA" Height="450" Width="800" Background="Gray">
+    <Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="318" Margin="38,65,0,0" VerticalAlignment="Top" Width="500" Background="Yellow"/>
+        <Label Content="TodoCasa S.A" HorizontalAlignment="Left" Margin="38,17,0,0" VerticalAlignment="Top" FontSize="25" FontWeight="Bold"/>
+        <Label Content="Buscar producto:" HorizontalAlignment="Left" Margin="319,37,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBuscar" HorizontalAlignment="Left" Height="23" Margin="418,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyUp="txtBuscar_KeyUp"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="557,69,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="629,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="557,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="629,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Categoria:" HorizontalAlignment="Left" Margin="557,131,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCategoria" HorizontalAlignment="Left" Height="23" Margin="629,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="557,162,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCantidad" HorizontalAlignment="Left" Height="23" Margin="629,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Precio:" HorizontalAlignment="Left" Margin="557,193,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrecio" HorizontalAlignment="Left" Height="23" Margin="629,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="IVA:" HorizontalAlignment="Left" Margin="557,224,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radio15" Content="15%" HorizontalAlignment="Left" Margin="637,230,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radio21" Content="21%" HorizontalAlignment="Left" Margin="697,230,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCreate" Content="Añadir" HorizontalAlignment="Left" Margin="580,273,0,0" VerticalAlignment="Top" Height="50" Width="75" Background="Yellow" Click="btnCreate_Click"/>
+        <Button x:Name="btnUpdate" Content="Editar" HorizontalAlignment="Left" Margin="580,333,0,0" VerticalAlignment="Top" Height="50" Width="75" Background="Yellow" Click="btnUpdate_Click"/>
+        <Button x:Name="btnReset" Content="Resetear" HorizontalAlignment="Left" Margin="674,273,0,0" VerticalAlignment="Top" Height="50" Width="75" Background="Yellow" Click="btnReset_Click"/>
+        <Button x:Name="btnDelete" Content="Borrar" HorizontalAlignment="Left" Margin="674,333,0,0" VerticalAlignment="Top" Height="50" Width="75" Background="Yellow" Click="btnDelete_Click"/>
+        <Button x:Name="btnReload" Content=">>" HorizontalAlignment="Left" Margin="709,30,0,0" VerticalAlignment="Top" Width="40" Height="30" Background="Yellow" Click="btnReload_Click"/>
+    </Grid>
+</Window>
